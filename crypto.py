@@ -60,5 +60,6 @@ schedule.every(5).minutes.do(job)
 job()
 # Continuous Execution
 
-
-
+while True:
+    schedule.run_pending()
+    time.sleep(1)
